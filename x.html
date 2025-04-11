@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las 4 temporadas más populares de Fortnite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #e74c3c;
+        }
+
+        .name {
+            cursor: pointer;
+            background-color: #f8f8f8;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .name:hover {
+            background-color: #e0e0e0;
+        }
+
+        .table-container {
+            display: none;
+            margin-top: 10px;
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f8f8;
+            width: 25%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-height: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Las 4 temporadas más populares de Fortnite</h1>
+
+        <!-- Temporada 4: Colisión Cósmica -->
+        <div class="name" onclick="toggleTable('temporada4')">
+            Temporada 4: Colisión Cósmica (Mayo 2018 - Julio 2018) ★★★★☆
+        </div>
+        <div id="temporada4" class="table-container">
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <td><span class="highlight">Temporada 4: Colisión Cósmica</span></td>
+                </tr>
+                <tr>
+                    <th>Fecha</th>
+                    <td>Mayo 2018 - Julio 2018</td>
+                </tr>
+                <tr>
+                    <th>Descripción</th>
+                    <td>La temporada de superhéroes que revolucionó Fortnite con el impacto del meteorito en Dusty Depot, transformándolo en Dusty Divot. Introdujo skins icónicas como Omega y Carbide.</td>
+                </tr>
+                <tr>
+                    <th>Eventos importantes</th>
+                    <td>
+                        <ul>
+                            <li>Impacto del meteorito que cambió el mapa</li>
+                            <li>Primer evento en vivo masivo</li>
+                            <li>Introducción de los primeros vehículos (carts)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Imagen</th>
+                    <td><img src="tem1.jpg" alt="Temporada 4"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Temporada 7: Invierno -->
+        <div class="name" onclick="toggleTable('temporada7')">
+            Temporada 7: Invierno (Diciembre 2018 - Febrero 2019) ★★★★☆
+        </div>
+        <div id="temporada7" class="table-container">
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <td><span class="highlight">Temporada 7: Invierno</span></td>
+                </tr>
+                <tr>
+                    <th>Fecha</th>
+                    <td>Diciembre 2018 - Febrero 2019</td>
+                </tr>
+                <tr>
+                    <th>Descripción</th>
+                    <td>La temporada invernal que cubrió gran parte del mapa con nieve y presentó nuevos vehículos como los planeadores. Introdujo Frosty Flights y Polar Peak.</td>
+                </tr>
+                <tr>
+                    <th>Eventos importantes</th>
+                    <td>
+                        <ul>
+                            <li>Evento del volcán que preparó la temporada 8</li>
+                            <li>Introducción de los planeadores</li>
+                            <li>Primeras skins legendarias de invierno</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Imagen</th>
+                    <td><img src="tem2.jpg" alt="Temporada 7"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Temporada X: El Fin -->
+        <div class="name" onclick="toggleTable('temporadaX')">
+            Temporada X: El Fin (Agosto 2019 - Octubre 2019) ★★★★★
+        </div>
+        <div id="temporadaX" class="table-container">
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <td><span class="highlight">Temporada X: El Fin</span></td>
+                </tr>
+                <tr>
+                    <th>Fecha</th>
+                    <td>Agosto 2019 - Octubre 2019</td>
+                </tr>
+                <tr>
+                    <th>Descripción</th>
+                    <td>La temporada que marcó el final del Capítulo 1, con un emotivo homenaje a todas las temporadas anteriores y un evento final que destruyó el mapa original.</td>
+                </tr>
+                <tr>
+                    <th>Eventos importantes</th>
+                    <td>
+                        <ul>
+                            <li>Evento final "El Fin" con la destrucción del mapa</li>
+                            <li>Regreso de ubicaciones clásicas</li>
+                            <li>Introducción de los mechs (B.R.U.T.E.)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Imagen</th>
+                    <td><img src="tem3.jpg" alt="Temporada X"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Capítulo 2 - Temporada 2: Agentes de Espionaje -->
+        <div class="name" onclick="toggleTable('temporadaC2S2')">
+            Capítulo 2 - Temporada 2: Agentes de Espionaje (Febrero 2020 - Junio 2020) ★★★★☆
+        </div>
+        <div id="temporadaC2S2" class="table-container">
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <td><span class="highlight">Capítulo 2 - Temporada 2: Agentes de Espionaje</span></td>
+                </tr>
+                <tr>
+                    <th>Fecha</th>
+                    <td>Febrero 2020 - Junio 2020</td>
+                </tr>
+                <tr>
+                    <th>Descripción</th>
+                    <td>Una de las temporadas más completas con tema de espionaje, introduciendo misiones secretas, bunkers y el famoso helicóptero.</td>
+                </tr>
+                <tr>
+                    <th>Eventos importantes</th>
+                    <td>
+                        <ul>
+                            <li>Introducción de misiones de espionaje</li>
+                            <li>Evento final "La Tormenta"</li>
+                            <li>Nuevas armas y mecánicas de sigilo</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Imagen</th>
+                    <td><img src="tem4.jpg" alt="Capítulo 2 Temporada 2"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function toggleTable(id) {
+            var table = document.getElementById(id);
+            if (table.style.display === "none") {
+                table.style.display = "block";
+            } else {
+                table.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
