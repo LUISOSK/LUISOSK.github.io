@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 3 | Actividad 03-1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unidad 3 | Actividad 03-1 :: Tema (JavaScript)</h1>
+    
+    <table id="tablaOperaciones">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Suma</th>
+                <th>Multiplica</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- La tabla se generará con JavaScript -->
+        </tbody>
+    </table>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabla = document.querySelector('#tablaOperaciones tbody');
+            const numeroBase = 5;
+            
+            for (let i = 1; i <= 10; i++) {
+                const fila = document.createElement('tr');
+                
+                // Número de operación
+                const celdaNo = document.createElement('td');
+                celdaNo.textContent = i;
+                fila.appendChild(celdaNo);
+                
+                // Suma
+                const celdaSuma = document.createElement('td');
+                celdaSuma.innerHTML = `${numeroBase} + ${i} = ${numeroBase + i}`;
+                fila.appendChild(celdaSuma);
+                
+                // Multiplicación
+                const celdaMultiplica = document.createElement('td');
+                celdaMultiplica.innerHTML = `${numeroBase} × ${i} = ${numeroBase * i}`;
+                fila.appendChild(celdaMultiplica);
+                
+                tabla.appendChild(fila);
+            }
+        });
+    </script>
+</body>
+</html>
